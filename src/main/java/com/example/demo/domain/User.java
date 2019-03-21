@@ -2,12 +2,28 @@ package com.example.demo.domain;
 
 import java.util.Date;
 
-public class User {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
+@Entity
+@Table(name = "user")
+public class User {
+	
+	@Id
+	  @GeneratedValue(strategy = GenerationType.AUTO)
+	  @Column(unique = true, nullable = false)
 	private Long idUser;
+	 @Column
 	private String lastNameame;
+	 @Column
 	private String firstName;
+	 @Column
 	private Date birthDate;
+	 @Column
 	private String email;
 
 	public User() {
