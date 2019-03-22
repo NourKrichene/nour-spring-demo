@@ -18,7 +18,7 @@ public class User {
 	  @Column(unique = true, nullable = false)
 	private Long idUser;
 	 @Column
-	private String lastNameame;
+	private String lastName;
 	 @Column
 	private String firstName;
 	 @Column
@@ -30,10 +30,10 @@ public class User {
 		super();
 	}
 
-	public User(Long idUser, String lastNameame, String firstName, Date birthDate, String email) {
+	public User(Long idUser, String lastName, String firstName, Date birthDate, String email) {
 		super();
 		this.idUser = idUser;
-		this.lastNameame = lastNameame;
+		this.lastName = lastName;
 		this.firstName = firstName;
 		this.birthDate = birthDate;
 		this.email = email;
@@ -47,12 +47,12 @@ public class User {
 		this.idUser = idUser;
 	}
 
-	public String getLastNameame() {
-		return lastNameame;
+	public String getLastName() {
+		return lastName;
 	}
 
-	public void setLastNameame(String lastNameame) {
-		this.lastNameame = lastNameame;
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 
 	public String getFirstName() {
