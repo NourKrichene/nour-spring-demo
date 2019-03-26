@@ -14,7 +14,7 @@ public class TextMessage {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(unique = true, nullable = false)
-	private Long idTextMessage;
+	private Long id;
 	@Column
 	private String text;
 
@@ -24,16 +24,16 @@ public class TextMessage {
 
 	public TextMessage(Long idTextMessage, String text) {
 		super();
-		this.idTextMessage = idTextMessage;
+		this.id = idTextMessage;
 		this.text = text;
 	}
 
 	public Long getIdTextMessage() {
-		return idTextMessage;
+		return id;
 	}
 
 	public void setIdTextMessage(Long idTextMessage) {
-		this.idTextMessage = idTextMessage;
+		this.id = idTextMessage;
 	}
 
 	public String getText() {
