@@ -1,2 +1,8 @@
-# nour-demo-spring
-It is a backend application.
+Backend application.
+
+-Kafka 
+-Swagger
+-Rest
+-SOAP
+-Travis CI
+-Postgres
