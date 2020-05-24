@@ -8,6 +8,6 @@ Spring Boot Application that demonstrates the integration and the use of some te
 
 -Kafka<br/>
 -Swagger 2<br/>
--Rest<br/>
+-REST<br/>
 -SOAP<br/>
 -Postgres DB<br/>
